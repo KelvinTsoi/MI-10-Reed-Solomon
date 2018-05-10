@@ -43,6 +43,8 @@
 #define MIN(a,b)  ((a) < (b) ? (a) : (b))
 #endif
 
+#define DEBUG 3
+
 #include "rscode.h"
 
 /* Stuff specific to the 8-bit symbol version of the general purpose RS codecs

@@ -13,10 +13,10 @@ CXXFLAGS = -g -O2 -fPIC -Wall
 CPPFLAGS = $(foreach n,$(AllDirs) , -I$(n))
 
 $(Bin) : $(Objs)
-	gcc $(Objs) -o $@
+	gcc $(Objs) -o $@ $(StaticLib)
 
 %.d : %.cpp
-	$(CC) -MT"$(<:.cpp=.o) $@" -MM $(CXXFLAGS) $(CPPFLAGS) $(StaticLib) $< > $@
+	$(CC) -MT"$(<:.cpp=.o) $@" -MM $(CXXFLAGS) $(CPPFLAGS) $< > $@
 
 sinclude $(Deps)
 
