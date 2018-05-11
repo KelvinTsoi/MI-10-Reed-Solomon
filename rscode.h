@@ -37,6 +37,9 @@
 #define RS_TOTAL_LEN  (RS_DATA_LEN + RS_NROOTS)
 #define RS_PAD    ((1<<RS_SYMSIZE) - 1 - RS_TOTAL_LEN)
 
+#define BB_CHARACTERS     "0123456789abcdefghijklmnopqrstuv"
+
+
 /*
  * General purpose RS codec, 8-bit symbols.
  */
